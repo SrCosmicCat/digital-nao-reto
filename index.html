@@ -5,12 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Miguel Angel Diosdado Rodriguez">
         <link rel="stylesheet" href="styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script type="module" src="main.js"></script>
         <script src="https://kit.fontawesome.com/8d68ce3c94.js" crossorigin="anonymous" defer></script>
+        <script src="main.js" type="module" defer></script>
         <title>Caroline Sada</title>
     </head>
     <body>
-        <header class="container">
+        <header class="fx-container">
             <div>
                 <div class="logo">
                     <i class="fa-regular fa-handshake"></i>
@@ -27,20 +29,23 @@
         </header>
         <main>
             <section id="land">
-                <div class="row container">
-                    <div class="col display">
-                        <h1 class="txt-outfit mg-0">Desarrolla tu</h1>
-                        <h1 class="txt-pacifico mg-0 txt-salmon">potencial financiero</h1>
-                        <h2 class="txt-outfit mg-0" style="width: 100%; text-align: end;">Con Caroline Sada</h2>
-                        <br><br>
-                        <div class="row" style="justify-content: center;">
-                            <a href="#curso" class="btn bg-teal txt-light"><i class="fa-solid fa-magnifying-glass"></i> Explorar curso</a>
-                            <a href="#contacto" class="btn bg-dark txt-light"> Contáctame</a>
+                <div class="fx-row fx-container">
+                    <div class="row m-0" style="width: 100%;">
+                        <div class="col-lg-7 col-md-7 col-sm-12 text-center">
+                            <h1 class="txt-outfit" style="font-size: 4.5em;">Desarrolla tu</h1>
+                            <h1 class="txt-pacifico txt-salmon" style="font-size: 4em;">potencial financiero</h1>
+                            <h2 class="txt-outfit mg-0" style="width: 100%; text-align: end;">Con Caroline Sada</h2>
+                            <br><br>
+                            <div class="fx-row" style="justify-content: center;">
+                                <a href="#curso" class="pg-btn bg-teal txt-light"><i class="fa-solid fa-magnifying-glass"></i> Explorar curso</a>
+                                <a href="#contacto" class="pg-btn bg-dark txt-light"> Contáctame</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="image">
-                        <img src="img/blob1.svg" class="bg-img" alt="Fondo de imagen con forma irregular" draggable="false">
-                        <img src="img/caroline1.png" alt="Fotografía de caroline" draggable="false">
+                        <div class="col-lg-1 col-md-1 col-sm-12">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+                            <img style="width: 80%;" src="img/caroline1.svg" alt="Caroline Sada">
+                        </div>
                     </div>
                 </div>
                 <div class="anim-drop">
@@ -48,66 +53,98 @@
                 </div>
             </section>
             <section id="conoceme">
-                <div class="container">
+                <div class="fx-container">
                     <h1>Conóceme</h1>
                     <div class="row">
-                        <div class="image">
-                            <img src="img/caroline2.svg" alt="Caroline Sada">
+                        <div class="col-lg-5 col-md-5 col-sm-12 text-center">
+                            <img style="width: 80%;" src="img/caroline2.svg" alt="Caroline Sada">
                         </div>
-                        <div class="info col" style="max-width: 50%;">
+                        <div class="col-lg-1 col-md-1 col-sm-12">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 text-center">
                             <h2 class="txt-pacifico txt-teal" style="font-size: 2.5em; font-weight: 300;">Soy Caroline Sada</h2>
                             <p style="text-wrap: pretty; text-align: center;">Licenciada en Administración de Empresas y creadora de contenido digital sobre gestión financiera.</p>
         
                             <h3>Redes Sociales</h3>
-                            <ul style="display: flex; flex-direction: row; gap: 20px; font-size: 2rem;">
-                                <li><a href="#"><i class="fa-brands fa-tiktok"></i></li></a>
-                                <li><a href="#"><i class="fa-brands fa-instagram"></i></li></a>
-                                <li><a href="#"><i class="fa-brands fa-youtube"></i></li></a>
-                                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></li></a>
+                            <ul class="social">
+                                <li><a href="#" class="social"><i class="fa-brands fa-tiktok"></i></li></a>
+                                <li><a href="#" class="social"><i class="fa-brands fa-instagram"></i></li></a>
+                                <li><a href="#" class="social"><i class="fa-brands fa-youtube"></i></li></a>
+                                <li><a href="#" class="social"><i class="fa-brands fa-x-twitter"></i></li></a>
                             </ul> 
                         </div>
                     </div>
                 </div>
             </section>
+            
             <section id="curso">
-                <div class="container">
+                <div class="fx-container">
                     <h1>Curso</h1>
                 </div>
                 <div style="position: relative; width: 100%;">
                     <div style="position: absolute; background-color: var(--teal); height: 100%; width: 100%; z-index: -10;"></div>
                     <img src="img/course.svg" alt="Imagen ilustrativa" style="position: absolute; right: 0; height: 100%;">
 
-                    <div class="container">
-                        <div style="width: 1200px; display: flex; margin: 30px;">
-                            <div class="col" style="max-width: 50%;">
+                    <div class="fx-container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 text-center mt-5">
                                 <h2 class="txt-pacifico txt-light" style="font-size: 3.5em; font-weight: 300; text-align: center;">Emprendimiento y Finanzas</h2>
                                 <p style="text-wrap: pretty; text-align: center;">¡Aprovecha y administra al máximo los recursos para llegar al éxito!</p>
-                                <a href="#contacto" class="btn bg-dark txt-light"> Contáctame</a>
+                                <a href="#contacto" class="pg-btn bg-dark txt-light"> Contáctame</a>
+                            </div>
+                        </div>
+                        <div style="width: 1200px; display: flex; margin: 30px;">
+                            <div class="fx-col" style="max-width: 50%;">
+                                
                             </div>
                         </div>
                         <br>
                     </div>
                 </div>
-
             </section>
+            
             <section id="contacto">
-                <div class="container">
+                <div class="fx-container">
                     <h1>Contacto</h1>
-                    <div class="row" style="margin: 0 20px; justify-content: space-around;">
-                        <img src="img/caroline3.svg" alt="Caroline Sada">
-                        <form>
-                            <div class="input-container"><div class="input-icon"><i class="fa-solid fa-user"></i></div> <input type="text" maxlength="70" placeholder="Nombre completo"></div>
-                            <div class="input-container"><div class="input-icon"><i class="fa-solid fa-envelope"></i></i></div><input type="email" maxlength="50" placeholder="Email"></div>
-                            <div class="input-container"><div class="input-icon"><i class="fa-solid fa-phone"></i></div><input type="text" maxlength="50" placeholder="Teléfono"></div>
-                            <div><textarea name="form-msg" id="" cols="30" rows="8" placeholder="Mensaje" maxlength="200"></textarea></div>
-                            <button type="submit" class="btn expanded bg-teal txt-light">Enviar mis datos <i class="fa-solid fa-paper-plane"></i></button>
-                        </form>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 text-center p-5">
+                            <img style="width: 80%;" src="img/caroline3.svg" alt="Caroline Sada">
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-12">
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-12 text-center p-5">
+                            <form class="needs-validation">
+                                <div class="input-container" id="nombre">
+                                    <div class="input-icon"><i class="fa-solid fa-user"></i></div> 
+                                    <input type="text" minlength="5" maxlength="70" placeholder="Nombre completo" required>
+                                    <span>Nombre inválido</span>
+                                </div>
+                                <div class="input-container" id="email">
+                                    <div class="input-icon"><i class="fa-solid fa-envelope"></i></i></div>
+                                    <input type="email" minlength="5" maxlength="50" placeholder="Email" required>
+                                    <span>Email inválido</span>
+                                </div>
+                                <div class="input-container" id="telefono">
+                                    <div class="input-icon"><i class="fa-solid fa-phone"></i></div>
+                                    <input type="text" minlength="10" maxlength="10" placeholder="Teléfono" required>
+                                    <span>Teléfono inválido</span>
+                                </div>
+                                <div class="input-container" id="mensaje">
+                                    <textarea fx-cols="30" fx-rows="10" placeholder="Mensaje" minlength="5" maxlength="200" required></textarea>
+                                    <span>Mensaje inválido</span>
+                                </div>
+                                <button type="submit" class="pg-btn expanded bg-teal txt-light">Enviar mis datos <i class="fa-solid fa-paper-plane"></i></button>
+                            </form>
+                            <div id="success-message" style="display: none;">
+                                <p>¡Datos enviados correctamente!</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
         <footer>
-            <div class="container">
+            <div class="fx-container">
                 <p> <span class="txt-pacifico">Caroline Sada</span> · Soluciones Creativas</p>
                 <p>Todos los derechos reservados</p>
                 <p>2024</p>
