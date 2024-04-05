@@ -7,13 +7,13 @@ const inpMensaje = document.querySelector('#mensaje');
 const successMessage = document.querySelector('#success-message');
 
 /**
- * Función para validar si una cadena contiene solo letras.
+ * Función para validar si una cadena contiene solo letras y espacios.
  *
  * @param {string} str - La cadena a validar.
  * @returns {boolean} Retorna true si la cadena solo contiene letras, de lo contrario retorna false.
  */
 function validateString(str) {
-    return /^[a-zA-Z]+$/.test(str);
+    return /^[a-zA-Z\s]+$/.test(str);
 }
 
 /**
