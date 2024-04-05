@@ -6,17 +6,32 @@ const inpTelefono = document.querySelector('#telefono');
 const inpMensaje = document.querySelector('#mensaje');
 const successMessage = document.querySelector('#success-message');
 
-// Valida si el string sólo contiene letras
+/**
+ * Función para validar si una cadena contiene solo letras.
+ *
+ * @param {string} str - La cadena a validar.
+ * @returns {boolean} Retorna true si la cadena solo contiene letras, de lo contrario retorna false.
+ */
 function validateString(str) {
     return /^[a-zA-Z]+$/.test(str);
 }
 
-// Valida si el string sólo contiene números
+/**
+ * Valida si el string sólo contiene números.
+ *
+ * @param {string} str - La cadena a validar.
+ * @returns {boolean} Retorna true si la cadena solo contiene números, de lo contrario retorna false.
+ */
 function validateNumber(str) {
     return /^[0-9]+$/.test(str);
 }
 
-// Valida si el string es un email
+/**
+ * Valida si el string es un email.
+ *
+ * @param {string} str - La cadena a validar.
+ * @returns {boolean} Retorna true si la cadena es un email válido, de lo contrario retorna false.
+ */
 function validateEmail(str) {
     return /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/.test(str);
 }
